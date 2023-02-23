@@ -53,12 +53,9 @@ body{
     position: relative;
     border: none;
     font-size: 1.3rem;
-    padding: 1rem 4rem 1rem 3rem;
-    
-    
-    
-    
+    padding: 1rem 4rem 1rem 3rem;    
 }
+
 .button5-1 {
     background-color: white;
     opacity:0.7;
@@ -88,7 +85,7 @@ img{
     width: 80%;
 }
 header{
-    width: 80%;
+    width: 90%;
     height: 65px;
     background: #fefefe;
     display: flex;
@@ -113,6 +110,7 @@ nav .logo{
 nav ul{
     display: flex;
 }
+
 nav ul li a {
     color:#212526 ;
     display: block;
@@ -128,7 +126,7 @@ nav ul li a:hover{
     background: #f6f4ff;
 }
 nav ul li a.active{
-    background:#675cff ;
+    background:#3a0ca3 ;
     color: #fff;
 }
 .hamburger{
@@ -196,160 +194,16 @@ nav ul li a.active{
 
 
 /*iniciando el main*/
-
 .conteudo{
     margin-top: 2rem;
     margin-left: 3.5rem;
     padding-top: 3rem;
     position: fixed;
 }
-.carrosel {
-    font-family: "Verdana", sans-serif;
-    -webkit-perspective: 250px;
-    -moz-perspective: 250px;
-    width: 400px;
-    height: 200px;
-    top: 50px;
-    position: relative;
-    margin: 0 auto;
-}
 
-@-webkit-keyframes efeitoCarrosel {
-    from {
-        -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
-        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
-        z-index: 10;
-        opacity: 1
-    }
 
-    50% {
-        z-index: -10;
-    }
 
-    to {
-        -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
-        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
-        z-index: 10;
-        opacity: 1
-    }
-}
 
-@-moz-keyframes efeitoCarrosel {
-    from {
-        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
-        z-index: 10;
-        opacity: 1
-    }
-
-    50% {
-        z-index: -10;
-    }
-
-    to {
-        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
-        z-index: 10;
-        opacity: 1
-    }
-}
-
-.caixa__card {
-    width: 90px;
-    height: 100px;
-    background:transparent ;
-    position: absolute;
-    display: flex;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    top: 35px;
-    left: 125px;
-    font-size: 9px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
-    text-align: center;
-    -webkit-animation-name: efeitoCarrosel;
-    -moz-animation-name: efeitoCarrosel;
-    -webkit-animation-duration: 8s;
-    -moz-animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-.caixa__card:hover {
-    border: solid #4466cc 3px;
-    box-shadow: 0px 0px 10px #4466cc;
-}
-
-.caixa__card.cc__1 {
-    background-image: url(assets/combos.jpeg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat;
-    -webkit-animation-delay: -7s;
-    -moz-animation-delay: -7s;
-}
-
-.caixa__card.cc__2 {
-    background-image: url(assets/baileys.jpg);
-    background-size:contain;
-    background-position: center;
-    background-repeat: repeat;
-    -webkit-animation-delay: -6s;
-    -moz-animation-delay: -6s;
-}
-
-.caixa__card.cc__3 {
-    background-image: url(./assets/Cerveza\ Cusqueña_.jpeg);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    -webkit-animation-delay: -5s;
-    -moz-animation-delay: -5s;
-}
-
-.caixa__card.cc__4 {
-    background-image: url(assets/habano.jpeg);
-    background-size: contain;
-    background-position: center;
-    -webkit-animation-delay: -4s;
-    -moz-animation-delay: -4s;
-}
-
-.caixa__card.cc__5 {
-    background-image: url(assets/combos2.png);
-    background-size: contain;
-    background-position: center;
-    -webkit-animation-delay: -3s;
-    -moz-animation-delay: -3s;
-}
-
-.caixa__card.cc__6 {
-    background-image: url(./assets/Whisky\ Chivas\ Regal\ 12\ Anos\ -\ 1L\ em\ Promoção\ _\ Ofertas\ na\ Americanas.jpg);
-    background-position: bottom;
-    background-size:cover;
-    background-clip: border-box;
-    background-repeat: no-repeat;
-    -webkit-animation-delay: -2s;
-    -moz-animation-delay: -2s;
-}
-
-.caixa__card.cc__7 {
-    background-image: url(assets/cerveza.jpeg) ;
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    -webkit-animation-delay: -1s;
-    -moz-animation-delay: -1s;
-}
-
-.caixa__card.cc__8 {
-    background-image:  url(./assets/Raspberry\ Gin\ Fizz\ With\ Grilled\ Lemon\ Wedges\ by\ wholesomepatisserie\ _\ Quick\ &\ Easy\ Recipe\ \ _\ The\ Feedfeed.jpeg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: repeat;
-}
 .sub-title{
     margin-top: 250px;
 }
@@ -424,8 +278,13 @@ body {
     border-radius: 16px;
 }
 .flip-card-front {
-    background-image: linear-gradient(45deg, #6f04d9, #d9048e);
+    background-image: linear-gradient(45deg, #6f04d9, #8a045c);        
 }
+
+.card-front-combos {
+    background-image: linear-gradient(45deg, #f3696e, #f8a902);        
+}
+
 .flip-card-front img {
     max-width: 260px;
     max-height: 240px;
@@ -436,9 +295,9 @@ body {
 .flip-card-back {
     background-image: linear-gradient(315deg, #6f04d9, #8a045c);
     color: #ffffff;
-    transform: rotateY(180deg);
-    
+    transform: rotateY(180deg);    
 }
+
 .flip-card-back img {
     width: auto;
     height: auto;
@@ -463,5 +322,21 @@ body {
 #img-combo{
     margin-top: 5rem;
 }
-/*slider container*/
+
+.card-combos {
+    background-image: linear-gradient(45deg, #f3696e, #f8a902);        
+}
+
+.card-tragos {
+    background-image: linear-gradient(45deg, #456fe8, #19b0ec);        
+}
+
+.card-licores {
+    background-image: linear-gradient(45deg, #243748, #4b749f);        
+}
+
+.card-cerveza {
+    background-image: linear-gradient(45deg, #00ff87, #60efff);        
+}
+
 
