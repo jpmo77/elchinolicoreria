@@ -79,7 +79,8 @@ body{
 /*iniciando el header de main*/
 
 .fondo-main{
-    background: black;
+    /*background: black;*/
+    background-color: #14213d;
 }
 img{
     width: 80%;
@@ -126,7 +127,7 @@ nav ul li a:hover{
     background: #f6f4ff;
 }
 nav ul li a.active{
-    background:#3a0ca3 ;
+    background:#ff0f7b ;
     color: #fff;
 }
 .hamburger{
@@ -208,7 +209,7 @@ nav ul li a.active{
     margin-top: 250px;
 }
 .title-secundary{
-    margin-top:80px ;
+    margin-top:50px ;
     text-align: center;
 }
 
@@ -230,8 +231,7 @@ nav ul li a.active{
 
 /*cards de productos*/
 
-* {
-    /*font-family: "Roboto";*/
+* {    
     font-family: "Open Sans";
 }
 
@@ -245,8 +245,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #020e26;
-    margin-top: 50px;
+    background-color: #14213d;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 
@@ -324,11 +324,11 @@ body {
 }
 
 .card-combos {
-    background-image: linear-gradient(45deg, #f3696e, #f8a902);        
+    background-image: linear-gradient(45deg, #ff0f7b, #f89b29);        
 }
 
 .card-tragos {
-    background-image: linear-gradient(45deg, #456fe8, #19b0ec);        
+    background-image: linear-gradient(45deg, #07c8f9, #0d41e1);        
 }
 
 .card-licores {
@@ -336,7 +336,7 @@ body {
 }
 
 .card-cerveza {
-    background-image: linear-gradient(45deg, #00ff87, #60efff);        
+    background-image: linear-gradient(45deg, #392d69, #b57bee);        
 }
 
 
