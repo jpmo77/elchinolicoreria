@@ -156,6 +156,44 @@ nav ul li a.active{
     /*background: #212526;*/
     background: #fff;
 }
+
+/*siempre que queremos poner un icono hay que llamar a .fa o .fas porqué en realidad lo que hacen es llamar la font-family.*/
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+/* a continuación hay que poner la instrucción concreta de cada icono. fijaros que en realidad mediante el pseudo-selector ::before introducimos contenido delante de la etiqueta*/
+
+.fa-thumbs-down:before {
+  content: "\f165"; }
+
+.fa-thumbs-up:before {
+  content: "\f164"; }
+
+/*si estás familiarizado con los breakpoints de bootstrap esto te gustará*/
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.fa-xs {
+  font-size: .75em; }
+
+.fa-sm {
+  font-size: .875em; }
+
+/*poner el icono a la izquierda o a la derecha*/
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.delivery-name{
+    font-size: 100%;
+}
+
 @media only screen and (max-width: 1100px) {
     header{
         width: 90%;
@@ -198,7 +236,20 @@ nav ul li a.active{
     .hamburger{
         display: block;
     }
-}
+
+    .div-delivery{
+        line-height: 90%;
+    }
+
+    .delivery-name{
+        font-size: 80%;        
+    }
+
+    .fa,
+    .fas {    
+        font-weight: 700; 
+        font-size: 70%;}
+    }
 
 
 
@@ -349,5 +400,7 @@ body {
 .card-cerveza {
     background-image: linear-gradient(45deg, #392d69, #b57bee);        
 }
+
+
 
 
